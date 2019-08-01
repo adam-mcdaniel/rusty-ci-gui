@@ -2,7 +2,6 @@ from tkinter import Tk, Label, Button, Frame, Widget, Entry, Text, StringVar, EN
 from tkinter.ttk import *
 
 from buildbot import ScriptInput, VCS
-from widgets import DropDown
 
 
 class RustyCIGui:

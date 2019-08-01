@@ -1,4 +1,4 @@
-from widgets import *
+from primitives import *
 
 
 class ScriptInput(GuiWidget):
