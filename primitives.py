@@ -6,6 +6,10 @@ from tkinter import Tk, Label, Button, Frame, Widget, Entry, Text, Listbox, Opti
 
 
 # The base class for all Widgets to be displayed
+# The purpose of this class is to provide a means to compose widgets
+# The goal is to create widgets by only implementing different
+# combinations of primitive widgets, and other custom widgets also
+# built on top of primitive widgets.
 class GuiWidget(Frame, Widget):
     def __init__(self, master, *args, **kwargs):
         super().__init__(master)
