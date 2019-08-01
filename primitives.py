@@ -31,7 +31,7 @@ class DropDown(GuiWidget):
         self.popupMenu = OptionMenu(master, self.selection, *items)
         self.popupMenu.pack()
 
-    def __str__(self): return self.selection.get()
+    def __str__(self): return str(self.selection.get())
 
 
 # Enter one line into a text dialog box

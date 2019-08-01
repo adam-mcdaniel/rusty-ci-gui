@@ -9,8 +9,6 @@ class ScriptInput(GuiWidget):
     def __str__(self): return str(self.script)
 
 
-class VCS(GuiWidget):
+class VCS(DropDown):
     def setup(self, master):
-        self.dropdown = DropDown(master, ["github", "gitlab"])
-    
-    def __str__(self): str(self.dropdown)
+        super().setup(master, ["github", "gitlab"])
